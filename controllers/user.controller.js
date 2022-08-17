@@ -1,3 +1,7 @@
-async function get(req, res, next) {
-    res.json({name:"anas"});
-  }
+function get(req, res, next) {
+  res.status(200).json({ name: "anas" });
+}
+
+module.exports = {
+  get,
+};
